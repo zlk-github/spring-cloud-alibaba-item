@@ -1,9 +1,5 @@
-# Getting Started
+# spring-cloud-alibaba 框架搭建
 
-### Reference Documentation
-For further reference, please consider the following sections:
+### 1 nocas+gateway集成版本 (分支dev-nacos-1.0)
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.3.5.RELEASE/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.3.5.RELEASE/maven-plugin/reference/html/#build-image)
-
+### 2 K8S集成版本 (分支dev-k8s-2.0)

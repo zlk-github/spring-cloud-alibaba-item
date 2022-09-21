@@ -1,0 +1,9 @@
+#此配置文件内容放到NACOS配置中心
+server:
+  port: 8001
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB #单个文件最大大小
+      max-request-size: 100MB #上传数据总大小

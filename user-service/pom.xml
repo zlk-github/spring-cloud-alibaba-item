@@ -5,20 +5,67 @@
 
     <parent>
         <groupId>com.zlk</groupId>
-        <artifactId>item</artifactId>
+        <artifactId>spring-cloud-alibaba-item</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>user-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>user-service</name>
-    <description>Demo project for Spring Boot</description>
-
-
 
     <dependencies>
 
     </dependencies>
+
+
+    <profiles>
+
+        <profile>
+            <!-- 本地环境 -->
+            <id>dev</id>
+            <properties>
+                <!-- 这里的属性名是随便取的，可以在后续配置中引用 -->
+                <profiles.dir>dev</profiles.dir>
+            </properties>
+            <!-- 是否默认 -->
+            <activation>
+                <activeByDefault>true</activeByDefault> <!--设置默认属性-->
+            </activation>
+        </profile>
+
+        <profile>
+            <!-- 开发环境 -->
+            <id>dev</id>
+            <properties>
+                <!-- 这里的属性名是随便取的，可以在后续配置中引用 -->
+                <profiles.dir>dev</profiles.dir>
+            </properties>
+        </profile>
+
+        <profile>
+            <!-- 测试环境 -->
+            <id>test</id>
+            <properties>
+                <!-- 这里的属性名是随便取的，可以在后续配置中引用 -->
+                <profiles.dir>test</profiles.dir>
+            </properties>
+        </profile>
+
+        <profile>
+            <!-- UAT环境 -->
+            <id>uat</id>
+            <properties>
+                <profiles.dir>uat</profiles.dir>
+            </properties>
+        </profile>
+
+        <profile>
+            <!-- 生产环境-->
+            <id>prod</id>
+            <properties>
+                <profiles.dir>prod/as</profiles.dir>
+            </properties>
+        </profile>
+
+    </profiles>
 
 
 </project>

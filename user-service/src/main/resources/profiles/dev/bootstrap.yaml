@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: user-service
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: 127.0.0.1:8848
+        namespace: dev
+        group: CLOUD_ITEM_GROUP
+        enabled: true
+      config:
+        server-addr: 112.74.181.248:8848
+        namespace: dev
+        group: CLOUD_ITEM_GROUP
+        file-extension: yaml
+        enabled: false
+  profiles:
+    active: dev
+main:
+  allow-bean-definition-overriding: true
